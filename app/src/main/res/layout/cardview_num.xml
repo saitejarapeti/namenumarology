@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardviewnum"
+        app:cardBackgroundColor="@color/indigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:animateLayoutChanges="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00B11E1E"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/numbertype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="numarology number"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:background="#009C4141"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="120dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/number"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10px"
+                android:text="Your Name this is waht your name is displayed"
+                android:textSize="15dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/messbtns"
+                    android:text="Know More"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/number"
+                    android:layout_below="@id/name"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:textSize="25dp"
+                android:id="@+id/messagetexts"
+                android:text=""
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+       
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
